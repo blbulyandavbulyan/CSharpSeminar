@@ -13,7 +13,6 @@ bool checkPolindrom(int number){
   //в данном цикле счётчик i нужен для получения цифр с конца, а счётчик j цифр с начала
   for(int i = number, power = count_digits - 1; i >= 1; i /= 10, power--){
     int digit = i % 10;
-    Console.WriteLine($"digit: {digit}, power: {power}");
     reversed_number += digit*(int)Math.Pow(10, power);
   }
   Console.WriteLine(reversed_number);
