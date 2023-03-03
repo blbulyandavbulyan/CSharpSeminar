@@ -15,7 +15,6 @@ bool checkPolindrom(int number){
     int digit = i % 10;
     reversed_number += digit*(int)Math.Pow(10, power);
   }
-  Console.WriteLine(reversed_number);
   return number == reversed_number;
 }
 Console.Write("Введите число: ");
